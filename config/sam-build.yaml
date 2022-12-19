@@ -1,0 +1,22 @@
+version: 0.2
+        
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12.x
+  pre_build:
+    on-failure: ABORT
+    commands:
+      - echo Validating SAM App Template...
+      # - cd recovery-plan-orchestration-iac/sam/recovery-plan-orchestration/
+      - sam validate 
+  build:
+    on-failure: ABORT
+    commands:
+      - echo Building SAM App...
+      - sam build
+artifacts:
+  files:
+    - '**/*'
+  name: sam_build_output
+  

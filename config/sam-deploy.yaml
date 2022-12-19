@@ -1,0 +1,15 @@
+version: 0.2
+        
+phases:
+  build:
+    on-failure: ABORT
+    commands:
+      - echo Deploying SAM App
+      - sam deploy
+      
+
+artifacts:
+  files:
+    - '**/*'
+  name: sam_deploy_output
+  
