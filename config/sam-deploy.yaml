@@ -5,9 +5,8 @@ phases:
     on-failure: ABORT
     commands:
       - echo Deploying SAM App
-      - sam deploy
+      - sam deploy --stack-name aws-sam-jenkins-pipeline-tutorial
       
-
 artifacts:
   files:
     - '**/*'
