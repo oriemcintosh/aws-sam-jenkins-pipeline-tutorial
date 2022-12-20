@@ -1,6 +1,3 @@
 # node modules
 node_modules
 
-# SAM related configs
-samconfig.toml
-build.toml

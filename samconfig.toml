@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "aws-sam-jenkins-pipeline-tutorial"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1xnh80addg0db"
+s3_prefix = "aws-sam-jenkins-pipeline-tutorial"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
