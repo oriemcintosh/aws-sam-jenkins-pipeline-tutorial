@@ -21,7 +21,7 @@ exports.lambdaHandler = async (event, context) => {
     response = {
       statusCode: 200,
       body: JSON.stringify({
-        message: "Hello World from ACG!!!!",
+        message: "Hello World from Cloud Enablement!",
         // location: ret.data.trim()
       }),
     };
