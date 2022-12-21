@@ -7,8 +7,9 @@ phases:
   build:
     on-failure: ABORT
     commands:
-      - echo Deploying SAM App
-      - sam deploy
+      - echo Entered the deploy phase...
+      - echo Deploy started on `date`
+      - sh /config/sam-deploy.sh
       
 artifacts:
   files:
