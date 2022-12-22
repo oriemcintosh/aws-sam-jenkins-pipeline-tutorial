@@ -1,0 +1,12 @@
+version: 0.2
+        
+phases:
+  build:
+    commands:
+      - echo Running CFN NAG against template
+      - docker run --rm -v template.yaml:/templates -t stelligent/cfn_nag /templates/
+artifacts:
+  files:
+    - '**/*'
+  name: cfn_nag_output
+  
