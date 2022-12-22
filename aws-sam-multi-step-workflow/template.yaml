@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  aws-sam-multi-step-workflow | Updated on: Thu Dec 22 15:09:03 EST 2022
+  aws-sam-multi-step-workflow | Updated on: Thu Dec 22 15:18:50 EST 2022
 
   Sample SAM Template for aws-sam-multi-step-workflow
 
