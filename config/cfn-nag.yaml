@@ -1,10 +1,14 @@
 version: 0.2
         
 phases:
+  install:
+    commands:
+      - echo Installing cfn-nag
+      - gem install cfn-nag
   build:
     commands:
-      - echo Running CFN NAG against template
-      - docker run --rm -v template.yaml:/templates -t stelligent/cfn_nag /templates/template.yaml
+      - echo Running 'cfn-nag' against template
+      - cfn_nag_scan --input-path .
 artifacts:
   files:
     - '**/*'
