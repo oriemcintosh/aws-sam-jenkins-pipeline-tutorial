@@ -9,7 +9,8 @@ phases:
     commands:
       - echo Entered the deploy phase...
       - echo Deploy started on `date`
-      - sh config/sam-deploy.sh
+      - sam deploy --s3-bucket ${SAMs3bucket} --kms-key-id ${SAMkmsKeyID}
+      # - sh config/sam-deploy.sh
       
 artifacts:
   files:
