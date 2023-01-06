@@ -12,7 +12,7 @@ phases:
       # - sam deploy --s3-bucket ${SAMs3bucket} --kms-key-id ${SAMkmsKeyID}
       # - sh config/sam-deploy.sh
       - echo Running testing script for Environment Variable Functionality
-      - ./testScript.sh
+      - ./config/testScript.sh
       
 artifacts:
   files:
