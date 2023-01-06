@@ -3,7 +3,7 @@
 echo "...Testing CodeBuild Project..."
 echo "...Verifying Enviroment Variables in Bash Script..."
 
-if [[ ! -z "$EnvSuffix" ]]; then 
-    echo $EnvSuffix 
+if [[ ! -z "$SAMConfigEnv" ]]; then 
+    echo $SAMConfigEnv 
 else echo "Empty Variable"
 fi
