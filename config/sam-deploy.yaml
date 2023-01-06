@@ -11,8 +11,8 @@ phases:
       # - echo Deploy started on `date`
       # - sam deploy --s3-bucket ${SAMs3bucket} --kms-key-id ${SAMkmsKeyID}
       # - sh config/sam-deploy.sh
-      - echo Running testing script for Environment Variable Functionality
-      - ./config/testScript.sh
+      - echo Running Deploy Script
+      - ./config/sam-deploy.sh
       
 artifacts:
   files:
