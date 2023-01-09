@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # command to gather parameter value from AWS and assign to $ConfigEnv variable
-ConfigEnv=$(aws cloudformation describe-stacks --stack-name recovery-plan-orchestration |jq '.Stacks[].Parameters | map(select(.ParameterKey == "ConfigEnv")) | .[0].ParameterValue ')
+ConfigEnv=$(cat config/deploy-vars.json | jq '.["ConfigEnv"]')
 
 echo "...Checking Enviroment Config to Deploy SAM App..."
 
