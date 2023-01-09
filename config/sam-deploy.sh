@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # command to gather parameter value from AWS and assign to $ConfigEnv variable
-ConfigEnv=$(cat config/deploy-vars.json | jq '.["ConfigEnv"]')
+ConfigEnv=$(cat config/deploy-vars.json | jq -r '.["ConfigEnv"]')
 
 echo "...Checking Enviroment Config to Deploy SAM App..."
 
