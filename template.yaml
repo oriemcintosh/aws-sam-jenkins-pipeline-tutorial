@@ -11,8 +11,8 @@ Globals:
     Timeout: 3
 
 Parameters:
-  EnvSuffix:
-    Description:    "Environment suffix for provisioned resources, e.g. '-dev' (Optional)"
+  ConfigEnv:
+    Description:    Added to the CloudFormation Template to assist the deployment pipeline in deciding which configuration Parameters to apply.
     Type:           String
     Default:        ""
 
