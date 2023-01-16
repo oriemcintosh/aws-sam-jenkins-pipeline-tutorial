@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Entered the deploy phase...
       - echo Deploy started on `date`
-      - sam deploy --config-env ${ConfigEnv}
+      - sam deploy --config-env ${ConfigEnv} --s3-bucket ${SAMs3bucket} --kms-key-id ${SAMkmsKeyID}
       # - sh config/sam-deploy.sh
       # - echo Running Deploy Script
       # - ./config/sam-deploy.sh
