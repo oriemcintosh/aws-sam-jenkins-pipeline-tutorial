@@ -16,3 +16,14 @@ s3_prefix = "github_testing_qa"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 image_repositories = []
+
+[github_testing]
+[github_testing.deploy]
+[github_testing.parameters]
+stack_name = "aws-sam-jenkins-pipeline-tutorial"
+s3_prefix = "github_testing_iam"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+
+

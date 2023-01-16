@@ -7,12 +7,12 @@ phases:
   build:
     on-failure: ABORT
     commands:
-      # - echo Entered the deploy phase...
-      # - echo Deploy started on `date`
-      # - sam deploy --s3-bucket ${SAMs3bucket} --kms-key-id ${SAMkmsKeyID}
+      - echo Entered the deploy phase...
+      - echo Deploy started on `date`
+      - sam deploy --config-env ${ConfigEnv}
       # - sh config/sam-deploy.sh
-      - echo Running Deploy Script
-      - ./config/sam-deploy.sh
+      # - echo Running Deploy Script
+      # - ./config/sam-deploy.sh
       
 artifacts:
   files:

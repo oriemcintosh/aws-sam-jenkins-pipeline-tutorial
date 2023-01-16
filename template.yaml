@@ -23,6 +23,14 @@ Resources:
           Properties:
             Path: /hello
             Method: get
+  
+  LoginParameterStore:
+    Type: AWS::SSM::Parameter
+    Properties: 
+      Type: String
+      Description: Parameter store for login authentication
+      Name: !Sub "cedr_login_auth_testing"
+      Value: "deployment-placeholder"
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
