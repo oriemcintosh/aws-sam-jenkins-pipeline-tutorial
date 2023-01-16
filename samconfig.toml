@@ -19,7 +19,7 @@ image_repositories = []
 
 [github_testing]
 [github_testing.deploy]
-[github_testing.parameters]
+[github_testing.deploy.parameters]
 stack_name = "aws-sam-jenkins-pipeline-tutorial"
 s3_prefix = "github_testing_iam"
 region = "us-east-1"

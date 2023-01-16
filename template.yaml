@@ -29,7 +29,7 @@ Resources:
     Properties: 
       Type: String
       Description: Parameter store for login authentication
-      Name: !Sub "cedr_login_auth_testing"
+      Name: "cedr_login_auth_testing"
       Value: "deployment-placeholder"
 
 Outputs:
